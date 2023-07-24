@@ -1,0 +1,37 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.9;
+
+contract Variables{
+    int wholeNumber;
+    uint undefinedNumber;
+    bool trueFalse;
+    string myString;
+
+    function setNumber(int _wholeNumber) public {
+        wholeNumber = _wholeNumber;
+    }
+    function getNumber()public view returns (int){
+        return wholeNumber;
+    }
+
+    function setUndefinedNumber(uint _undefinedNumber) public {
+        undefinedNumber = _undefinedNumber;
+    }
+    function getUndefinedNumber() public view returns (uint) {
+        return undefinedNumber;
+    }
+
+    function settrueFalse(bool _TrueFalse) public {
+        trueFalse = _TrueFalse;
+    }
+    function gettrueFalse() public view returns (bool) {
+        return trueFalse;
+    }
+
+    function setmyString(string memory _myString) public {
+        myString = _myString;
+    }
+    function getmyString() public view returns (string memory){
+        return myString;
+    }
+}
